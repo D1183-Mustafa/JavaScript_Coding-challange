@@ -37,6 +37,8 @@ function bracketVal(text) {
         }else if(son.includes(i)){
             if(kontrol.length > 0 && ilk[son.indexOf(i)] === kontrol[kontrol.length-1]){
                 kontrol.pop();
+            }else {
+                return false
             }
         }
     }
