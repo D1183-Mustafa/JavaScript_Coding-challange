@@ -52,7 +52,8 @@ function maxDeğerler(arr, k) {
       if (elemanK.length < k) {
         break;
       } else {
-        result.push(elemanK.sort((a, b) => b - a)[0]);
+        // result.push(elemanK.sort((a, b) => b - a)[0]);
+        result.push(Math.max(...elemanK))
       }
     }
   }
@@ -60,7 +61,7 @@ function maxDeğerler(arr, k) {
   return result;
 }
 
-console.log(maxDeğerler([1, 3, -1, -3, 5, 3, 6, 7], 2));
+console.log(maxDeğerler([10, 5, 2, 7, 8, 7], 2));
 
 // var points = [40, 100, 1, 5, 25, 10];
 // points.sort((a,b) => b-a)
